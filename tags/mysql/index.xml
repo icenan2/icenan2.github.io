@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>不足为外人道也</title>
-    <link>http://www.luobin.me/</link>
-    <description>Recent content on 不足为外人道也</description>
+    <title>Mysql on 不足为外人道也</title>
+    <link>http://www.luobin.me/tags/mysql/</link>
+    <description>Recent content in Mysql on 不足为外人道也</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Jan 2016 22:33:21 +0800</lastBuildDate>
-    <atom:link href="http://www.luobin.me/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.luobin.me/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>centos 下mysql5.6.10源码安装</title>
@@ -75,15 +75,6 @@ Curses library not found.  Please install appropriate package,。。。
 &lt;p&gt;这样的错误，只需重新确认一下mysql.sock文件的路径，在/etc/my.cnf 文件中设施一下socket=path即可。
 对于mysqladmin，同样需要在/etc/my.cnf 文件中[mysqladmin]下设置socket 路径&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>http://www.luobin.me/about/</link>
-      <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
-      
-      <guid>http://www.luobin.me/about/</guid>
-      <description></description>
     </item>
     
   </channel>
