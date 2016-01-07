@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 不足为外人道也</title>
-    <link>http://www.luobin.me/post/</link>
-    <description>Recent content in Posts on 不足为外人道也</description>
+    <title>Tag2 on 不足为外人道也</title>
+    <link>http://www.luobin.me/tags/tag2/</link>
+    <description>Recent content in Tag2 on 不足为外人道也</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2013 09:21:14 +0800</lastBuildDate>
-    <atom:link href="http://www.luobin.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.luobin.me/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>“名不副实”的JSON</title>
@@ -85,74 +85,6 @@
 
 &lt;p&gt;可以像这样访问 JavaScript 对象数组中的第一项：&lt;code&gt;employees[0].lastName;&lt;/code&gt;
 返回的内容是：Gates&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>centos 下mysql5.6.10源码安装</title>
-      <link>http://www.luobin.me/post/1/</link>
-      <pubDate>Sat, 06 Apr 2013 22:33:21 +0800</pubDate>
-      
-      <guid>http://www.luobin.me/post/1/</guid>
-      <description>&lt;p&gt;从mysql5.5起，mysql源码安装开始使用cmake了，所以首先要安装cmake
-可以用命令：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    rpm -qa | grep cmake
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;查询当前系统有没有安装查cmake。&lt;/p&gt;
-
-&lt;p&gt;下载解压安装cmake&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#tar -zvxf cmake-2.8.3.tar.gz
-#cd cmake-2.8.3
-#./configure
-#make
-#make install 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;可能会出现没有C++编译器的错误，默认的gcc默认没有支持c++，使用以下语句安装
-    #yum -y install gcc-c++&lt;/p&gt;
-
-&lt;p&gt;执行源码编译配置脚本&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cmake \
--DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
--DMYSQL_UNIX_ADDR=/usr/local/mysql/mysql.sock \
--DDEFAULT_CHARSET=utf8 \
--DDEFAULT_COLLATION=utf8_general_ci \
--DWITH_MYISAM_STORAGE_ENGINE=1 \
--DWITH_INNOBASE_STORAGE_ENGINE=1 \
--DWITH_ARCHIVE_STORAGE_ENGINE=1 \
--DWITH_BLACKHOLE_STORAGE_ENGINE=1 \
--DWITH_MEMORY_STORAGE_ENGINE=1 \
--DWITH_READLINE=1 \
--DENABLED_LOCAL_INFILE=1 \
--DMYSQL_DATADIR=/db/mysql/data \
--DMYSQL_USER=mysql \
--DMYSQL_TCP_PORT=3306
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果出现以下错误：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cmake .
--- MySQL 5.5.8
--- Could NOT find Curses (missing:  CURSES_LIBRARY  CURSES_INCLUDE_PATH)
-CMake Error at cmake/readline.cmake:82 (MESSAGE):
-Curses library not found.  Please install appropriate package,。。。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;执行 yum -y install ncurses-devel 命令，然后删除生成的CMakeCache.txt文件，重新执行cmake&lt;/p&gt;
-
-&lt;p&gt;执行 &lt;code&gt;＃make  &amp;amp;&amp;amp; make install&lt;/code&gt; 编译安装&lt;/p&gt;
-
-&lt;p&gt;在运行mysqld的时候可能会遇到类似：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ERROR 2002 (HY000): Can’t connect to local MySQL server through socket ‘/var/lib/mysql/mysql.sock’ (2) 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这样的错误，只需重新确认一下mysql.sock文件的路径，在/etc/my.cnf 文件中设施一下socket=path即可。
-对于mysqladmin，同样需要在/etc/my.cnf 文件中[mysqladmin]下设置socket 路径&lt;/p&gt;
 </description>
     </item>
     
