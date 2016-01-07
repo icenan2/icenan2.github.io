@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jokes on 不足为外人道也</title>
+    <link>http://www.luobin.me/joke/</link>
+    <description>Recent content in Jokes on 不足为外人道也</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Jan 2016 10:12:02 +0800</lastBuildDate>
+    <atom:link href="http://www.luobin.me/joke/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>0</title>
+      <link>http://www.luobin.me/joke/0/</link>
+      <pubDate>Thu, 07 Jan 2016 10:12:02 +0800</pubDate>
+      
+      <guid>http://www.luobin.me/joke/0/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://ww3.sinaimg.cn/large/6bb75443gw1ezqqd3orj9j207n053jrc.jpg&#34; alt=&#34;程序猿&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;程序员问科比：“你为什么这么成功？”&lt;br /&gt;
+科比：“你知道洛杉矶早晨4点钟是什么样子吗？”
+程序员：“知道，一般那时候我还没睡。怎么了？”
+科比：“……没事！”&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;点评：跟程序员比辛苦，你打完炮了人家还在抠腚呢~想想也是苦逼的程序员一枚。。不说了，都是泪。。
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
