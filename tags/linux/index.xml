@@ -10,11 +10,11 @@
     <atom:link href="http://www.luobin.me/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>centos 下mysql5.6.10源码安装</title>
-      <link>http://www.luobin.me/post/1/</link>
+      <title>centos下mysql5.6.10源码安装</title>
+      <link>http://www.luobin.me/post/centos%E4%B8%8Bmysql5.6.10%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</link>
       <pubDate>Sat, 06 Apr 2013 22:33:21 +0800</pubDate>
       
-      <guid>http://www.luobin.me/post/1/</guid>
+      <guid>http://www.luobin.me/post/centos%E4%B8%8Bmysql5.6.10%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</guid>
       <description>&lt;p&gt;从mysql5.5起，mysql源码安装开始使用cmake了，所以首先要安装cmake
 可以用命令：&lt;/p&gt;
 

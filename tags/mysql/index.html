@@ -122,10 +122,10 @@
 	   
 <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/post/1/">centos 下mysql5.6.10源码安装</a></h2>
+        <h2 class="post-title"><a href="/post/centos%E4%B8%8Bmysql5.6.10%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/">centos下mysql5.6.10源码安装</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>从mysql5.5起，mysql源码安装开始使用cmake了，所以首先要安装cmake 可以用命令： rpm -qa | grep cmake 查询当前系统有没有安装查cmake。 下载解压安装cmake #tar -zvxf cmake-2.8.3.tar.gz #cd cmake-2.8.3 #./configure #make #make install 可能会出现没有C++编译器的错误，默认的gcc默认没有支持c++，使用以下语句安装 #yum -y install gcc-c++ 执行源码编译配置脚本 cmake \ -DCMAKE_INSTALL_PREFIX=/usr/local/mysql \ -DMYSQL_UNIX_ADDR=/usr/local/mysql/mysql.sock \ -DDEFAULT_CHARSET=utf8 \ -DDEFAULT_COLLATION=utf8_general_ci \ -DWITH_MYISAM_STORAGE_ENGINE=1 \ -DWITH_INNOBASE_STORAGE_ENGINE=1 \ -DWITH_ARCHIVE_STORAGE_ENGINE=1 \ -DWITH_BLACKHOLE_STORAGE_ENGINE=1 \ -DWITH_MEMORY_STORAGE_ENGINE=1 \ -DWITH_READLINE=1 \ -DENABLED_LOCAL_INFILE=1 \ -DMYSQL_DATADIR=/db/mysql/data \ -DMYSQL_USER=mysql \ -DMYSQL_TCP_PORT=3306 如果出现以下错误： cmake . -- MySQL 5.5.8 -- Could NOT find Curses (missing: CURSES_LIBRARY CURSES_INCLUDE_PATH) CMake Error at cmake/readline.cmake:82 (MESSAGE): Curses library not found. <a class="read-more" href="/post/1/">&raquo;</a></p>
+        <p>从mysql5.5起，mysql源码安装开始使用cmake了，所以首先要安装cmake 可以用命令： rpm -qa | grep cmake 查询当前系统有没有安装查cmake。 下载解压安装cmake #tar -zvxf cmake-2.8.3.tar.gz #cd cmake-2.8.3 #./configure #make #make install 可能会出现没有C++编译器的错误，默认的gcc默认没有支持c++，使用以下语句安装 #yum -y install gcc-c++ 执行源码编译配置脚本 cmake \ -DCMAKE_INSTALL_PREFIX=/usr/local/mysql \ -DMYSQL_UNIX_ADDR=/usr/local/mysql/mysql.sock \ -DDEFAULT_CHARSET=utf8 \ -DDEFAULT_COLLATION=utf8_general_ci \ -DWITH_MYISAM_STORAGE_ENGINE=1 \ -DWITH_INNOBASE_STORAGE_ENGINE=1 \ -DWITH_ARCHIVE_STORAGE_ENGINE=1 \ -DWITH_BLACKHOLE_STORAGE_ENGINE=1 \ -DWITH_MEMORY_STORAGE_ENGINE=1 \ -DWITH_READLINE=1 \ -DENABLED_LOCAL_INFILE=1 \ -DMYSQL_DATADIR=/db/mysql/data \ -DMYSQL_USER=mysql \ -DMYSQL_TCP_PORT=3306 如果出现以下错误： cmake . -- MySQL 5.5.8 -- Could NOT find Curses (missing: CURSES_LIBRARY CURSES_INCLUDE_PATH) CMake Error at cmake/readline.cmake:82 (MESSAGE): Curses library not found. <a class="read-more" href="/post/centos%E4%B8%8Bmysql5.6.10%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/">&raquo;</a></p>
     </section>
     <footer class="post-meta">
         
