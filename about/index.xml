@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on 设计∙人生</title>
+    <link>http://www.wanglijuan.com/about/</link>
+    <description>Recent content in Abouts on 设计∙人生</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 12 Jan 2016 17:19:11 +0800</lastBuildDate>
+    <atom:link href="http://www.wanglijuan.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://www.wanglijuan.com/about/about/</link>
+      <pubDate>Tue, 12 Jan 2016 17:19:11 +0800</pubDate>
+      
+      <guid>http://www.wanglijuan.com/about/about/</guid>
+      <description>&lt;p&gt;About me!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
