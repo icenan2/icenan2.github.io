@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript on 不足为外人道也</title>
-    <link>http://www.luobin.me/tags/javascript/</link>
-    <description>Recent content in Javascript on 不足为外人道也</description>
+    <title>Javascript on 不足为外人道</title>
+    <link>http://luobin.me/tags/javascript/</link>
+    <description>Recent content in Javascript on 不足为外人道</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2013 09:21:14 +0800</lastBuildDate>
-    <atom:link href="http://www.luobin.me/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://luobin.me/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>“名不副实”的JSON</title>
-      <link>http://www.luobin.me/post/%E5%90%8D%E4%B8%8D%E5%89%AF%E5%AE%9E%E7%9A%84JSON/</link>
+      <link>http://luobin.me/post/%E5%90%8D%E4%B8%8D%E5%89%AF%E5%AE%9E%E7%9A%84JSON/</link>
       <pubDate>Wed, 15 May 2013 09:21:14 +0800</pubDate>
       
-      <guid>http://www.luobin.me/post/%E5%90%8D%E4%B8%8D%E5%89%AF%E5%AE%9E%E7%9A%84JSON/</guid>
+      <guid>http://luobin.me/post/%E5%90%8D%E4%B8%8D%E5%89%AF%E5%AE%9E%E7%9A%84JSON/</guid>
       <description>&lt;p&gt;JSON (Javascript Object Notation):直接翻译就是javascript的对象表示方法。是一种轻量级的数据交换格式。 易于人阅读和编写。同时也易于机器解析和生成。 它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。 JSON采用完全独立于语言的文本格式，但是也使用了类似于C语言家族的习惯（包括C, C++, C#, Java, JavaScript, Perl, Python等）。 这些特性使JSON成为理想的数据交换语言。也就是说现在的JSON俨然已经“名不副实”了&lt;/p&gt;
 
 &lt;p&gt;JSON的特点:&lt;/p&gt;

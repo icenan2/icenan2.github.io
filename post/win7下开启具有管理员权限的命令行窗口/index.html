@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" win7下开启具有管理员权限的命令行窗口 &middot;  不足为外人道" />
+  	<meta property="og:site_name" content="不足为外人道" />
+  	<meta property="og:url" content="http://luobin.me/post/win7%E4%B8%8B%E5%BC%80%E5%90%AF%E5%85%B7%E6%9C%89%E7%AE%A1%E7%90%86%E5%91%98%E6%9D%83%E9%99%90%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%AA%97%E5%8F%A3/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2013-01-13T22:19:53&#43;08:00" />
+
+    
+    <meta property="og:article:tag" content="windows" />
+    
+    
+
+  <title>
+     win7下开启具有管理员权限的命令行窗口 &middot;  不足为外人道
+  </title>
+
+    <meta name="description" content="忽逢桃花林，夹岸数百步，芳草鲜美，落英缤纷" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://luobin.me/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://luobin.me/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://luobin.me/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://luobin.me/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://luobin.me/index.xml" rel="alternate" type="application/rss+xml" title="不足为外人道" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.16-DEV" />
+
+    <link rel="canonical" href="http://luobin.me/post/win7%E4%B8%8B%E5%BC%80%E5%90%AF%E5%85%B7%E6%9C%89%E7%AE%A1%E7%90%86%E5%91%98%E6%9D%83%E9%99%90%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%AA%97%E5%8F%A3/" />
+
+    
+
+    
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?8bfedf31fe5289efc9183823d0de1d4b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/about/">About me</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/joke">Joke</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://luobin.me/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://luobin.me/"><img src="http://luobin.me/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">win7下开启具有管理员权限的命令行窗口</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2013-01-13T22:19:53&#43;08:00">
+            Jan 13, 2013
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://luobin.me/tags/windows/">#windows</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>&emsp;&emsp;使用vim在win7下敲代码的时候，发现最后保存的时候提示错误 ：E212：无法打开并写入文件，很是奇怪</p>
+
+<p>&emsp;&emsp;不论是新建文件还是编辑已有的文件，问题现象一致，猜想应该是所在目录的权限设置问题。但是问题又只在</p>
+
+<p>通过cmd窗口启动vim时才会出现，使用右键&ndash;&gt;vim编辑打开文件是ok的，查了一下，原来Windows7在开启</p>
+
+<p>UAC的情况下使用运行启动的cmd.exe是没有管理员权限的。而我的系统文件夹均是在图形界面下创建的，默认是</p>
+
+<p>管理员，其他用户没有写的权限。</p>
+
+<p>&emsp;&emsp;那么，如何使用管理员权限启动cmd或者其他程序呢，一个简单的方法是：</p>
+
+<p>&emsp;&emsp;<em>在开始菜单的搜索框里输入cmd或者你要运行的程序名称，然后按下ctrl + shift + enter</em> 即可</p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://luobin.me/" style="background-image: url(http://luobin.me/images/logo.png)"><span class="hidden">icenan2's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://luobin.me/">icenan2</a></h4>
+  
+  <p>IT software and Security Engineer, Open source enthusiast.</p>
+  
+  <div class="author-meta">
+    
+    
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=win7%e4%b8%8b%e5%bc%80%e5%90%af%e5%85%b7%e6%9c%89%e7%ae%a1%e7%90%86%e5%91%98%e6%9d%83%e9%99%90%e7%9a%84%e5%91%bd%e4%bb%a4%e8%a1%8c%e7%aa%97%e5%8f%a3&amp;url=http%3a%2f%2fluobin.me%2fpost%2fwin7%25E4%25B8%258B%25E5%25BC%2580%25E5%2590%25AF%25E5%2585%25B7%25E6%259C%2589%25E7%25AE%25A1%25E7%2590%2586%25E5%2591%2598%25E6%259D%2583%25E9%2599%2590%25E7%259A%2584%25E5%2591%25BD%25E4%25BB%25A4%25E8%25A1%258C%25E7%25AA%2597%25E5%258F%25A3%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fluobin.me%2fpost%2fwin7%25E4%25B8%258B%25E5%25BC%2580%25E5%2590%25AF%25E5%2585%25B7%25E6%259C%2589%25E7%25AE%25A1%25E7%2590%2586%25E5%2591%2598%25E6%259D%2583%25E9%2599%2590%25E7%259A%2584%25E5%2591%25BD%25E4%25BB%25A4%25E8%25A1%258C%25E7%25AA%2597%25E5%258F%25A3%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fluobin.me%2fpost%2fwin7%25E4%25B8%258B%25E5%25BC%2580%25E5%2590%25AF%25E5%2585%25B7%25E6%259C%2589%25E7%25AE%25A1%25E7%2590%2586%25E5%2591%2598%25E6%259D%2583%25E9%2599%2590%25E7%259A%2584%25E5%2591%25BD%25E4%25BB%25A4%25E8%25A1%258C%25E7%25AA%2597%25E5%258F%25A3%2f&amp;description=win7%e4%b8%8b%e5%bc%80%e5%90%af%e5%85%b7%e6%9c%89%e7%ae%a1%e7%90%86%e5%91%98%e6%9d%83%e9%99%90%e7%9a%84%e5%91%bd%e4%bb%a4%e8%a1%8c%e7%aa%97%e5%8f%a3"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fluobin.me%2fpost%2fwin7%25E4%25B8%258B%25E5%25BC%2580%25E5%2590%25AF%25E5%2585%25B7%25E6%259C%2589%25E7%25AE%25A1%25E7%2590%2586%25E5%2591%2598%25E6%259D%2583%25E9%2599%2590%25E7%259A%2584%25E5%2591%25BD%25E4%25BB%25A4%25E8%25A1%258C%25E7%25AA%2597%25E5%258F%25A3%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">不足为外人道</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://luobin.me/js/jquery.js"></script>
+    <script type="text/javascript" src="http://luobin.me/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://luobin.me/js/index.js"></script>
+    
+</body>
+</html>
+

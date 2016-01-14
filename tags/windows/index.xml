@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on 不足为外人道</title>
+    <link>http://luobin.me/tags/windows/</link>
+    <description>Recent content in Windows on 不足为外人道</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jan 2013 22:19:53 +0800</lastBuildDate>
+    <atom:link href="http://luobin.me/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>win7下开启具有管理员权限的命令行窗口</title>
+      <link>http://luobin.me/post/win7%E4%B8%8B%E5%BC%80%E5%90%AF%E5%85%B7%E6%9C%89%E7%AE%A1%E7%90%86%E5%91%98%E6%9D%83%E9%99%90%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%AA%97%E5%8F%A3/</link>
+      <pubDate>Sun, 13 Jan 2013 22:19:53 +0800</pubDate>
+      
+      <guid>http://luobin.me/post/win7%E4%B8%8B%E5%BC%80%E5%90%AF%E5%85%B7%E6%9C%89%E7%AE%A1%E7%90%86%E5%91%98%E6%9D%83%E9%99%90%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%AA%97%E5%8F%A3/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;使用vim在win7下敲代码的时候，发现最后保存的时候提示错误 ：E212：无法打开并写入文件，很是奇怪&lt;/p&gt;
+
+&lt;p&gt;&amp;emsp;&amp;emsp;不论是新建文件还是编辑已有的文件，问题现象一致，猜想应该是所在目录的权限设置问题。但是问题又只在&lt;/p&gt;
+
+&lt;p&gt;通过cmd窗口启动vim时才会出现，使用右键&amp;ndash;&amp;gt;vim编辑打开文件是ok的，查了一下，原来Windows7在开启&lt;/p&gt;
+
+&lt;p&gt;UAC的情况下使用运行启动的cmd.exe是没有管理员权限的。而我的系统文件夹均是在图形界面下创建的，默认是&lt;/p&gt;
+
+&lt;p&gt;管理员，其他用户没有写的权限。&lt;/p&gt;
+
+&lt;p&gt;&amp;emsp;&amp;emsp;那么，如何使用管理员权限启动cmd或者其他程序呢，一个简单的方法是：&lt;/p&gt;
+
+&lt;p&gt;&amp;emsp;&amp;emsp;&lt;em&gt;在开始菜单的搜索框里输入cmd或者你要运行的程序名称，然后按下ctrl + shift + enter&lt;/em&gt; 即可&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>windows下为有道添加星际译王词典</title>
+      <link>http://luobin.me/post/windows%E4%B8%8B%E4%B8%BA%E6%9C%89%E9%81%93%E6%B7%BB%E5%8A%A0%E6%98%9F%E9%99%85%E8%AF%91%E7%8E%8B%E8%AF%8D%E5%85%B8/</link>
+      <pubDate>Thu, 16 Feb 2012 22:29:34 +0800</pubDate>
+      
+      <guid>http://luobin.me/post/windows%E4%B8%8B%E4%B8%BA%E6%9C%89%E9%81%93%E6%B7%BB%E5%8A%A0%E6%98%9F%E9%99%85%E8%AF%91%E7%8E%8B%E8%AF%8D%E5%85%B8/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;windows下一直使用有道词典，缺陷没有离线词库。今天终于找到让有道词典可以支持离线的方法，那就是给其添加大名鼎鼎的星际译王的词典（其实星际译王也有windows版的）。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;到这里下载自己需要的词典  &lt;a href=&#34;http://abloz.com/huzheng/stardict-dic/zh_CN/&#34;&gt;http://abloz.com/huzheng/stardict-dic/zh_CN/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;下载的文件默认是tar.bz2格式，一种linux的文件打包压缩格式（因为星际诞生于gnu/linux平台）。有道并不支持这种压缩的格式，需要解压。用winrar，等很多解压缩软件都可以。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;解压出来，后缀为dz,idx,ifo三个文件。建议将其全部拷贝到X:/Program Files/Youdao/DeskDict2/localdicts  （X为你的有道安装目录）。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;四 打开有道桌面词典，按照下面的顺序操作：选项…-&amp;gt;词典管理-&amp;gt;添加，找到刚刚解压缩获得的文件夹里的ifo格式的文件，确认后添加&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&amp;emsp;&amp;emsp;现在可以方便的使用有道词典离线查词啦&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
