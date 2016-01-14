@@ -96,6 +96,79 @@
     </item>
     
     <item>
+      <title>centos搭建svn服务器</title>
+      <link>http://luobin.me/post/centos%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Tue, 18 Feb 2014 21:43:12 +0800</pubDate>
+      
+      <guid>http://luobin.me/post/centos%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>&lt;p&gt;首先安装subversion，直接：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yum -y install subversion 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;svnserve --version&lt;/code&gt; 查看 返回版本号说明安装成功&lt;/p&gt;
+
+&lt;p&gt;建立svn库,执行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;svnadmin create /opt/svn/kuyustore
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;执行上面的命令后，自动在kuyustore下建立多个文件， 分别是conf, db,format,hooks, locks, README.txt。&lt;/p&gt;
+
+&lt;p&gt;配置svnserve&lt;/p&gt;
+
+&lt;p&gt;进入上面生成conf目录， 有以下几个文件:&lt;/p&gt;
+
+&lt;p&gt;authz, passwd, svnserve.conf&lt;/p&gt;
+
+&lt;p&gt;其中authz 配置用户权限，设置哪些用户可以读写哪些目录,passwd是设置用户和密码的, svnserve是主配置文件设置svn相关的操作。&lt;/p&gt;
+
+&lt;p&gt;passwd文件:&lt;/p&gt;
+
+&lt;p&gt;[users]&lt;/p&gt;
+
+&lt;p&gt;# 用户名 =密码&lt;/p&gt;
+
+&lt;p&gt;kuyu=123456&lt;/p&gt;
+
+&lt;p&gt;以上表示建立了用户kuyu，注意行首不能有空格&lt;/p&gt;
+
+&lt;p&gt;authz文件：&lt;/p&gt;
+
+&lt;p&gt;[/]&lt;/p&gt;
+
+&lt;p&gt;kuyu= rw&lt;/p&gt;
+
+&lt;p&gt;。。。&lt;/p&gt;
+
+&lt;p&gt;意思是用户kuyu对所有的目录有读写权限&lt;/p&gt;
+
+&lt;p&gt;svnserve.conf文件：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[general]
+
+auth-access = write
+password-db = passwd
+authz-db = authz
+realm = kuyustore
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;启动svn服务&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;svnserve -d -r /opt/svn
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后就可以通过TortoiseSVN客户端输入 svn://ip/kuyustore 链接svn服务了。虽然git等分布式版本控制工具是大势所趋，但是使用svn进行版本管理相对git来讲有以下优势&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;相对简单，比git学习成本低。&lt;/li&gt;
+&lt;li&gt;权限控制比git好，可以精确控制目录权限&lt;/li&gt;
+&lt;li&gt;svn支持空目录，windows平台有较好的支持&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>“名不副实”的JSON</title>
       <link>http://luobin.me/post/%E5%90%8D%E4%B8%8D%E5%89%AF%E5%AE%9E%E7%9A%84JSON/</link>
       <pubDate>Wed, 15 May 2013 09:21:14 +0800</pubDate>
