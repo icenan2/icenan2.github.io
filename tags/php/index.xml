@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on 不足为外人道</title>
+    <link>http://luobin.me/tags/php/</link>
+    <description>Recent content in Php on 不足为外人道</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Apr 2014 22:13:13 +0800</lastBuildDate>
+    <atom:link href="http://luobin.me/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>centos下源码安装php5.3.24注意事项</title>
+      <link>http://luobin.me/post/centos%E4%B8%8B%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85php5.3.24%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
+      <pubDate>Mon, 14 Apr 2014 22:13:13 +0800</pubDate>
+      
+      <guid>http://luobin.me/post/centos%E4%B8%8B%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85php5.3.24%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
+      <description>&lt;p&gt;1.注意事项.&lt;br /&gt;
+ &amp;emsp;&amp;emsp;需要先安装libxml2 和 libxml2-devel&lt;/p&gt;
+
+&lt;p&gt;2.php.ini的路径&lt;/p&gt;
+
+&lt;p&gt;&amp;emsp;&amp;emsp;在Unix上，php.ini文件缺省放在/usr/local/lib上面，因为缺省的存放路径是/lib，但是可以在编译的时候使用&amp;ndash;with-config-file-path参数 来修改php.ini的存放位置，例如你可以使用&amp;ndash;with-config-file-path=/etc把它存放到/etc下面，然后可以从源码包中拷贝php.ini-develop 或者 php.ini-product到/etc/php.ini并修改使之满足需要。&lt;/p&gt;
+
+&lt;p&gt;3.安装php的mcrypt扩展(动态加载编译)&lt;/p&gt;
+
+&lt;p&gt;&amp;emsp;&amp;emsp;执行 &lt;code&gt;yum list installed|grep mcrypt&lt;/code&gt;查看mcrypt及依赖库是否安装，没有的话执行 &lt;code&gt;yum -y install libmcrypt libmcrypt-devel mcrypt mhash&lt;/code&gt;安装&lt;/p&gt;
+
+&lt;p&gt;下载php下的mcrypt扩展或者直接下载php的完整安装包,切换到php代码下的 ext/mcrypt目录&lt;/p&gt;
+
+&lt;p&gt;执行phpize命令（phpize是用来扩展php扩展模块的，通过phpize可以建立php的外挂模块）&lt;/p&gt;
+
+&lt;p&gt;执行完后，会发现当前目录下多了一些configure文件，&lt;/p&gt;
+
+&lt;p&gt;执行&lt;br /&gt;
+&lt;code&gt;./configure --with-php-config=/usr/local/bin/php-config&lt;/code&gt; //根据具体的安装路径&lt;/p&gt;
+
+&lt;p&gt;然后&lt;code&gt;make &amp;amp;&amp;amp; make install&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;最后出现提示：&lt;br /&gt;
+&lt;code&gt;Installing shared extensions: /path&lt;/code&gt; //path可在 php-config 中的extension_dir处设置&lt;/p&gt;
+
+&lt;p&gt;接下来在php.ini 中修改&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;extension_dir=/path
+extension=mcrypt.so
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;4.在安装gd扩展的时候 如果出现 &lt;code&gt;configure: error: png.h not found.&lt;/code&gt;的错误&lt;/p&gt;
+
+&lt;p&gt;需要安装一下 libpng-devel&lt;br /&gt;
+&lt;code&gt;yum -y install libpng-devel&lt;/code&gt; 即可&lt;/p&gt;
+
+&lt;p&gt;5.在安装curl扩展的时候如果出现：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;configure: error: Please reinstall the libcurl distribution -
+easy.h should be in /include/curl/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;解决办法同4，安装一下curl的devel包就ok了&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yum -y install curl-devel    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6.在用phpmyadmin导入数据经常会出现提示:*没有接收到要导入的数据*。&lt;br /&gt;
+&amp;emsp;&amp;emsp;可能是文件名没有提交，也可能是文件大小超出 PHP 限制。phpmyadmin在选择文件时会有最大限制的提示，对比下待导入数据的大小，然后打开php.ini,查找“upload_max_filesize”关键字，将其修改为比待导入数据稍大些的值，然后重启 web服务器即可。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
