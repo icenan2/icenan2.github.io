@@ -6,13 +6,13 @@
     <description>Recent content in Centos on 不足为外人道</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Apr 2014 22:13:13 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2013 22:13:13 +0800</lastBuildDate>
     <atom:link href="http://luobin.me/tags/centos/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>centos下源码安装php5.3.24注意事项</title>
       <link>http://luobin.me/post/centos%E4%B8%8B%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85php5.3.24%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
-      <pubDate>Mon, 14 Apr 2014 22:13:13 +0800</pubDate>
+      <pubDate>Sun, 14 Apr 2013 22:13:13 +0800</pubDate>
       
       <guid>http://luobin.me/post/centos%E4%B8%8B%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85php5.3.24%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
       <description>&lt;p&gt;1.注意事项.&lt;br /&gt;
@@ -70,7 +70,7 @@ easy.h should be in /include/curl/
     <item>
       <title>centos的逆袭</title>
       <link>http://luobin.me/post/centos%E7%9A%84%E9%80%86%E8%A2%AD/</link>
-      <pubDate>Sat, 08 Mar 2014 22:52:24 +0800</pubDate>
+      <pubDate>Fri, 08 Mar 2013 22:52:24 +0800</pubDate>
       
       <guid>http://luobin.me/post/centos%E7%9A%84%E9%80%86%E8%A2%AD/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://user-image.logdown.io/user/1175/blog/1158/post/98892/NdKBG3eTS2mFhnM7n1IS_centos.png&#34; alt=&#34;centos.png&#34; /&gt;&lt;br /&gt;
@@ -96,7 +96,7 @@ easy.h should be in /include/curl/
     <item>
       <title>centos搭建svn服务器</title>
       <link>http://luobin.me/post/centos%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Tue, 18 Feb 2014 21:43:12 +0800</pubDate>
+      <pubDate>Mon, 18 Feb 2013 21:43:12 +0800</pubDate>
       
       <guid>http://luobin.me/post/centos%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>&lt;p&gt;首先安装subversion，直接：&lt;/p&gt;

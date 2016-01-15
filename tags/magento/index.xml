@@ -6,13 +6,13 @@
     <description>Recent content in Magento on 不足为外人道</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2014 22:40:08 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 13 Apr 2013 22:40:08 +0800</lastBuildDate>
     <atom:link href="http://luobin.me/tags/magento/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>magento 1.7.02安装问题</title>
       <link>http://luobin.me/post/magento-1.7.02%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Sun, 13 Apr 2014 22:40:08 +0800</pubDate>
+      <pubDate>Sat, 13 Apr 2013 22:40:08 +0800</pubDate>
       
       <guid>http://luobin.me/post/magento-1.7.02%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;p&gt;&amp;emsp;&amp;emsp;很明显错误的提示是当前数据库不支持InnoDB storage engine，但是通过show engines命令以及phpinfo()函数查看，mysql的InnodB都是正常的，后来搜到magento中文社区的一篇文章原文链接&lt;a href=&#34;http://www.magentochina.org/blog/install-magento-on-mysql-5-6&#34;&gt;http://www.magentochina.org/blog/install-magento-on-mysql-5-6&lt;/a&gt;&lt;/p&gt;

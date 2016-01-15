@@ -183,10 +183,10 @@
         
 <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/post/centos%E4%B8%8Bmysql5.6.10%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/">centos下mysql5.6.10源码安装</a></h2>
+        <h2 class="post-title"><a href="/post/centos%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/">centos搭建svn服务器</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>从mysql5.5起，mysql源码安装开始使用cmake了，所以首先要安装cmake 可以用命令： rpm -qa | grep cmake 查询当前系统有没有安装查cmake。 下载解压安装cmake #tar -zvxf cmake-2.8.3.ta <a class="read-more" href="/post/centos%E4%B8%8Bmysql5.6.10%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/">&raquo;</a></p>
+        <p>首先安装subversion，直接： yum -y install subversion svnserve &ndash;version 查看 返回版本号说明安装成功 建立svn库,执行： svnadmin create /opt/svn/kuyustore 执行上 <a class="read-more" href="/post/centos%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/">&raquo;</a></p>
     </section>
     <footer class="post-meta">
         
@@ -196,13 +196,11 @@
         
         on
             
-                <a href="http://luobin.me/tags/linux/">#linux</a>,
-            
-                <a href="http://luobin.me/tags/mysql/">#mysql</a>,
+                <a href="http://luobin.me/tags/centos/">#centos</a>,
             
         
-        <time class="post-date" datetime="2013-04-06T22:33:21&#43;08:00">
-            6 Apr 2013
+        <time class="post-date" datetime="2013-02-18T21:43:12&#43;08:00">
+            18 Feb 2013
         </time>
     </footer>
 </article>
