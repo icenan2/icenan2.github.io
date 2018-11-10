@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 设计∙人生</title>
+    <link>http://wanglijuan.com/categories/</link>
+    <description>Recent content in Categories on 设计∙人生</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="http://wanglijuan.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>交互设计</title>
+      <link>http://wanglijuan.com/categories/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Thu, 21 Apr 2016 15:11:13 +0800</pubDate>
+      
+      <guid>http://wanglijuan.com/categories/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>记事</title>
+      <link>http://wanglijuan.com/categories/%E8%AE%B0%E4%BA%8B/</link>
+      <pubDate>Fri, 08 Jan 2016 20:50:27 +0800</pubDate>
+      
+      <guid>http://wanglijuan.com/categories/%E8%AE%B0%E4%BA%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>随笔</title>
+      <link>http://wanglijuan.com/categories/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://wanglijuan.com/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
