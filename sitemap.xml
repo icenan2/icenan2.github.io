@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>http://wanglijuan.com/2017/09/09/%E9%99%AA%E7%88%B8%E7%88%B8%E9%92%93%E9%B1%BC%E7%9A%84%E5%B0%8F%E5%A5%B3%E5%AD%A9/</loc>
+    <lastmod>2017-09-09T18:41:05+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wanglijuan.com/2016/06/12/%E6%88%91%E4%B8%80%E4%B8%AA%E4%BA%BA%E4%BD%8F/</loc>
     <lastmod>2016-06-12T18:41:05+08:00</lastmod>
   </url>
@@ -53,10 +58,6 @@
   </url>
   
   <url>
-    <loc>http://wanglijuan.com/1/01/01/</loc>
-  </url>
-  
-  <url>
     <loc>http://wanglijuan.com/tags/2015/</loc>
     <lastmod>2015-12-31T13:01:37+08:00</lastmod>
     <priority>0</priority>
@@ -80,13 +81,13 @@
   </url>
   
   <url>
-    <loc>http://wanglijuan.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</loc>
+    <loc>http://wanglijuan.com/categories/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2016-04-21T15:11:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wanglijuan.com/categories/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</loc>
+    <loc>http://wanglijuan.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2016-04-21T15:11:13+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -105,6 +106,7 @@
   
   <url>
     <loc>http://wanglijuan.com/tags/%E5%B0%8F%E5%A5%B3%E5%AD%A9/</loc>
+    <lastmod>2017-09-09T18:41:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -140,18 +142,19 @@
   
   <url>
     <loc>http://wanglijuan.com/tags/%E9%92%93%E9%B1%BC/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://wanglijuan.com/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2016-01-10T15:56:22+08:00</lastmod>
+    <lastmod>2017-09-09T18:41:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://wanglijuan.com/categories/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2017-12-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://wanglijuan.com/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2016-01-10T15:56:22+08:00</lastmod>
     <priority>0</priority>
   </url>
   
