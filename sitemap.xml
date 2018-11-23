@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>http://wanglijuan.com/2017/07/25/%E5%A4%8F%E6%97%A5%E9%9A%8F%E6%83%B3/</loc>
+    <lastmod>2017-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wanglijuan.com/2016/06/12/%E6%88%91%E4%B8%80%E4%B8%AA%E4%BA%BA%E4%BD%8F/</loc>
     <lastmod>2016-06-12T18:41:05+08:00</lastmod>
   </url>
@@ -89,6 +94,12 @@
   <url>
     <loc>http://wanglijuan.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2016-04-21T15:11:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://wanglijuan.com/tags/%E5%A4%8F%E6%97%A5/</loc>
+    <lastmod>2017-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
